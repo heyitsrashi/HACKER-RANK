@@ -1,0 +1,34 @@
+#include <stdio.h>
+#include<string.h>
+int main()
+{
+    char s1 [] = "abc";
+    char s2 [] = "out";
+    if (strcmp(s1,s2) == 0)
+    printf("Equal");
+    else 
+    printf("Not Equal");
+    return 0;
+}
+
+
+9)string vowel
+#include <stdio.h>
+#include<string.h>
+int main()
+{
+    char str[] = "programming";
+   int i;
+   for (i=0;str[i]!='\0';i++)
+   {
+    if (str[i] =='a' ||str[i] =='e' || str[i] =='i' || str[i] =='o' || str[i] =='u}')
+    {
+        printf("%c is a vowel\n",str[i]);
+    }
+ else
+    {
+        printf("%c is a consonant\n",str[i]);
+    }
+   }
+    return 0;
+}
