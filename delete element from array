@@ -1,0 +1,32 @@
+#include <stdio.h>
+int main()
+{
+  int a [100],n,i,pos;
+  //Input array size
+  printf("Enter the size of the array: ");
+  scanf("%d", &n);
+  //input array elements
+  printf("enter array elements:\n");
+  for(i=0;i<n;i++)
+  {
+    scanf("%d",&a[i]);
+
+  }
+  //input position to delete
+  printf("enter position to delete:");
+  scanf("%d",&pos);
+  //shift elements to the left 
+  for (i = pos-1;i<n-1;i++)
+  {
+    a[i] = a[i+1];
+
+  }
+  n--;//display updated array
+  printf("array after deletion :\n");
+  for (i = 0;i<n; i++)
+  {
+    printf("%d",a[i]);
+    
+  }
+  return 0;
+}
